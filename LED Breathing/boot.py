@@ -9,7 +9,7 @@ pwm = PWM(0, frequency=5000)
 
 myfloat = 0
 fade = 0.01
-# toggle the pin
+
 while True:
 
     myfloat=myfloat+fade
@@ -18,11 +18,3 @@ while True:
 
     if (myfloat<=0 or myfloat>=1):
         fade=-fade
-
-
-
-    # for i in range(10):
-    #     myfloat=myfloat+0.1
-    #     pwm_c = pwm.channel(0, pin='P9', duty_cycle=myfloat)
-    #     time.sleep(1)
-    #     myfloat=-myfloat
